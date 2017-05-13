@@ -1,0 +1,23 @@
+package chrome;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class chrome {
+	
+	@Test
+	public void ApplLaunch()
+	{
+		System.setProperty("Webdriver.chrome.driver","C:\\Users\\Ajay\\Desktop\\Selenium Softwares\\chromedriver_win32");
+		ChromeDriver driver;
+	driver	= new ChromeDriver();
+		driver.get("http://google.com");
+		driver.close();
+	}
+		
+		
+		
+		
+	
+}

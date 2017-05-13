@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13885" started-at="2017-05-13T00:37:02Z" finished-at="2017-05-13T00:37:15Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12038" started-at="2017-05-13T00:37:02Z" finished-at="2017-05-13T00:37:14Z">
+      <class name="chrome.chrome">
+        <test-method status="PASS" signature="ApplLaunch()[pri:0, instance:chrome.chrome@1753acfe]" name="ApplLaunch" duration-ms="12008" started-at="2017-05-12T19:37:02Z" finished-at="2017-05-12T19:37:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplLaunch -->
+      </class> <!-- chrome.chrome -->
+    </test> <!-- Default test -->
+    <test name="program1" duration-ms="13885" started-at="2017-05-13T00:37:02Z" finished-at="2017-05-13T00:37:15Z">
+      <class name="day10.Day1Programms">
+        <test-method status="PASS" signature="ApplLaunch()[pri:0, instance:day10.Day1Programms@1810399e]" name="ApplLaunch" is-config="true" duration-ms="12683" started-at="2017-05-12T19:37:02Z" finished-at="2017-05-12T19:37:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplLaunch -->
+        <test-method status="PASS" signature="Maximise()[pri:1, instance:day10.Day1Programms@1810399e]" name="Maximise" duration-ms="216" started-at="2017-05-12T19:37:14Z" finished-at="2017-05-12T19:37:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Maximise -->
+        <test-method status="PASS" signature="ClickOnLink()[pri:2, instance:day10.Day1Programms@1810399e]" name="ClickOnLink" duration-ms="457" started-at="2017-05-12T19:37:14Z" finished-at="2017-05-12T19:37:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnLink -->
+        <test-method status="PASS" signature="CloseApp()[pri:0, instance:day10.Day1Programms@1810399e]" name="CloseApp" is-config="true" duration-ms="518" started-at="2017-05-12T19:37:15Z" finished-at="2017-05-12T19:37:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseApp -->
+      </class> <!-- day10.Day1Programms -->
+    </test> <!-- program1 -->
+  </suite> <!-- Default suite -->
+</testng-results>

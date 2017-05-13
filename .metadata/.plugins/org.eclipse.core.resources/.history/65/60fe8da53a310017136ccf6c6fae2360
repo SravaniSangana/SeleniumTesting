@@ -1,0 +1,12 @@
+package chrome;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class chrome {
+	public void main(String Args[])
+	{
+		System.setProperty("Webdriver.chrome.driver","C:\\Users\\Ajay\\Desktop\\Selenium Softwares\\chromedriver_win32");
+		ChromeDriver driver= new ChromeDriver();
+		driver.get("http://google.com");
+	}
+}

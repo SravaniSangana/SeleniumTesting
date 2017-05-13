@@ -1,0 +1,43 @@
+package day11;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class LinkTesting {
+	FirefoxDriver driver;
+	@BeforeTest
+	public void ApplLaunch()
+	{
+		driver=new FirefoxDriver();
+		driver.get("http://newtours.demoaut.com");
+		driver.manage().window().maximize();
+	}
+@Test
+public void LinksTesting() throws IOException
+{
+	FileInputStream f = new FileInputStream("C:\\Users\\Ajay\\Desktop\\SravaniSelenium\\WebApplicationTesting\\src\\com\\ExcelTestData\\DataDrivenLinksTestData.xlsx");
+	XSSFWorkbook wb =new XSSFWorkbook(f);
+	XSSFSheet ws =wb.getSheet("Sheet1");
+int	rowCount= ws.getLastRowNum();
+for(int i=1;i<=rowCount;i++)
+{
+Row	R=ws.getRow(i);
+
+
+}
+}
+	
+	
+}
+
+
+
+}
