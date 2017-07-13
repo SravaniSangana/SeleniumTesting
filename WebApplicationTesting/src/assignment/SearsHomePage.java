@@ -33,8 +33,11 @@ public class SearsHomePage {
 	XSSFWorkbook wb =new XSSFWorkbook(f);
 	XSSFSheet ws =wb.getSheet("Sheet1");
 	Row r=ws.getRow(0);
+	double d= r.getCell(5).getNumericCellValue();
+	long l=(long)d;
+	String x=Long.toString(l);
 	
-		S.JoinForFree(driver,r.getCell(0).getStringCellValue(),r.getCell(1).getStringCellValue(),r.getCell(2).getStringCellValue());
+		S.JoinForFree(driver,r.getCell(0).getStringCellValue(),r.getCell(1).getStringCellValue(),r.getCell(2).getStringCellValue(),r.getCell(3).getStringCellValue(),r.getCell(4).getStringCellValue(),x);
 		
 		driver.close();
 	}

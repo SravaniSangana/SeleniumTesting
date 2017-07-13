@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.io.Zip;
 import org.openqa.selenium.server.browserlaunchers.Sleeper;
 import org.openqa.selenium.support.FindBy;
 
@@ -36,17 +37,26 @@ public class SearsOnlineInstore {
 	WebElement ConfirmEmail;
 	@FindBy(xpath=".//*[@id='password']")
 	WebElement CreatePassword;
-	@FindBy(xpath=".//*[@id='universalSignInBtns']/button[1]")
+	@FindBy(xpath=".//*[@id='universalSignInBtns']/button")
 	WebElement Join;
-	//@FindBy(id="easyXDM_default8837_provider")
-	//WebElement Iframe;
-	public void JoinForFree(FirefoxDriver driver,String email,String cemail,String pwd)
+	@FindBy(name="fname")
+	WebElement FirstName;
+	@FindBy(name="lname")
+	WebElement LastName;
+	@FindBy(name="zip")
+	WebElement ZipCode;
+	
+	public void JoinForFree(FirefoxDriver driver,String email,String cemail,String pwd,String firstName,String lastName,String zipCode)
 	{
 		act=new Actions(driver);
 	driver.switchTo().frame(1);
 		Email.sendKeys(email);
 		ConfirmEmail.sendKeys(cemail);
 		CreatePassword.sendKeys(pwd);
+		FirstName.sendKeys(firstName);
+		LastName.sendKeys(lastName);
+		ZipCode.sendKeys(zipCode);
+		Sleeper.sleepTightInSeconds(5);
 		Join.click();
 	}
 

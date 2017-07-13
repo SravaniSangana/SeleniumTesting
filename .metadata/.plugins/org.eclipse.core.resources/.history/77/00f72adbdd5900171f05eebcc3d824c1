@@ -1,0 +1,22 @@
+package day5;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Dropdown {
+
+	public static void main(String[] args) {
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ajay\\Desktop\\chromedriver_win32\\chromedriver.exe");
+	ChromeDriver driver =new ChromeDriver();
+	driver.get("http://spicejet.com");
+	WebElement A= driver.findElement(By.id("ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListPassengerType_ADT"));
+	Select S= new Select(A);
+S.selectByVisibleText("2 Adults");
+Select c= new Select(driver.findElement(By.id("ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListPassengerType_CHD")));
+c.selectByIndex(3);
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.mavenproject.myproject;
+
+public class Facebook {
+
+	public static void main(String[] args)
+	{
+		
+	}
+}

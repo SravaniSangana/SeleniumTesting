@@ -1,0 +1,16 @@
+package day5;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Dropdown {
+
+	public static void main(String[] args) {
+	FirefoxDriver driver =new FirefoxDriver();
+	driver.get("http://spicejet.com");
+	Select S= new Select(driver.findElement(By.id("ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListPassengerType_ADT")));
+S.selectByIndex(1);
+	}
+
+}

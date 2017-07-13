@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginToursApp" project="CucumberFramework" tests="3" started="3" failures="0" errors="0" ignored="3">
+  <testsuite name="loginTours.LoginToursApp" time="0.0">
+    <testsuite name="Feature: New Tours Application" time="0.0">
+      <testsuite name="Scenario: Test Login of New Tours" time="0.0" incomplete="true">
+        <skipped/>
+        <testcase name="Given Open Firefox and start the application" classname="Scenario: Test Login of New Tours" time="0.0" ignored="true"/>
+        <testcase name="When I have Valid Credentials" classname="Scenario: Test Login of New Tours" time="0.0" ignored="true"/>
+        <testcase name="Then user should be able to login" classname="Scenario: Test Login of New Tours" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,15 @@
+
+<suite name="Grid Testing" parallel="tests">
+  <test name="Firefox">
+  <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="day1.Grid"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test  name="chrome">
+  <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="day1.Grid"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->

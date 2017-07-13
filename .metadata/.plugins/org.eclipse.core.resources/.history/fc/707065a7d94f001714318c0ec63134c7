@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Grid Testing" parallel="tests">
+  <test name="Firefox">
+  <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="day10.Day1Programms"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test  name="Default test">
+  <parameter name="Browser" value="Google"/>
+    <classes>
+      <class name="chrome.chrome"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
